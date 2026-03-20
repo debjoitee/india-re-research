@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India RE Sector — Investment Research 2025–26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0f0e0c;
+  --paper: #f5f1ea;
+  --cream: #ede9e0;
+  --gold: #b8860b;
+  --gold-light: #d4a017;
+  --green: #1a4a2e;
+  --green-light: #2d7a4f;
+  --green-pale: #e8f2ec;
+  --red: #8b1a1a;
+  --red-pale: #fdf0f0;
+  --amber-pale: #fdf6e3;
+  --border: rgba(15,14,12,0.12);
+  --border-strong: rgba(15,14,12,0.25);
+  --serif: 'Playfair Display', Georgia, serif;
+  --mono: 'DM Mono', monospace;
+  --sans: 'DM Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ── HEADER ── */
+header {
+  border-bottom: 2px solid var(--ink);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 100;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  border-bottom: 0.5px solid var(--border-strong);
+}
+.masthead {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.6;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.logo span { color: var(--green-light); }
+.header-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink);
+  opacity: 0.5;
+  text-align: right;
+  line-height: 1.5;
+}
+nav {
+  display: flex;
+  gap: 0;
+  padding: 0 40px;
+  overflow-x: auto;
+}
+nav a {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 10px 16px;
+  border-right: 0.5px solid var(--border);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+nav a:first-child { border-left: 0.5px solid var(--border); }
+nav a:hover { background: var(--ink); color: var(--paper); }
+
+/* ── HERO ── */
+.hero {
+  padding: 64px 40px 48px;
+  border-bottom: 1px solid var(--border-strong);
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 48px;
+  align-items: end;
+}
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--green-light); }
+.hero-lead {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: 0.75;
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+.hero-disclaimer {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink);
+  opacity: 0.45;
+  line-height: 1.6;
+  border-top: 0.5px solid var(--border);
+  padding-top: 12px;
+}
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border-strong);
+}
+.stat-block {
+  padding: 18px 20px;
+  border-bottom: 0.5px solid var(--border);
+}
+.stat-block:last-child { border-bottom: none; }
+.stat-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.5;
+  margin-bottom: 4px;
+}
+.stat-value {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+.stat-sub {
+  font-size: 11px;
+  color: var(--green-light);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+/* ── MACRO TAPE ── */
+.macro-tape {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 10px 40px;
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  border-bottom: 2px solid var(--gold);
+}
+.tape-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tape-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+.tape-val {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+.tape-chg { font-size: 10px; padding: 1px 6px; border-radius: 2px; }
+.up { background: rgba(45,122,79,0.35); color: #7fcc9a; }
+.neutral { background: rgba(184,134,11,0.25); color: #d4a017; }
+
+/* ── SECTION WRAPPER ── */
+.section {
+  padding: 56px 40px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  border-bottom: 0.5px solid var(--border-strong);
+}
+.section-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.section-subtitle {
+  font-size: 13px;
+  color: var(--ink);
+  opacity: 0.5;
+  margin-left: auto;
+  font-family: var(--mono);
+}
+
+/* ── COMPANY CARDS ── */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1px;
+  background: var(--border-strong);
+  border: 1px solid var(--border-strong);
+}
+.company-card {
+  background: var(--paper);
+  padding: 28px;
+  transition: background 0.2s;
+  cursor: default;
+}
+.company-card:hover { background: var(--cream); }
+.cc-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.cc-name {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.cc-ticker {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink);
+  opacity: 0.45;
+  margin-top: 2px;
+}
+.cc-badge {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.badge-ipp { background: var(--green-pale); color: var(--green); border: 0.5px solid #a8d4b8; }
+.badge-mfg { background: #e8f0fd; color: #1a3a7a; border: 0.5px solid #b5c8f0; }
+.badge-epc { background: var(--amber-pale); color: #7a4a0a; border: 0.5px solid #e8c87a; }
+.badge-integ { background: #f0e8fd; color: #4a1a7a; border: 0.5px solid #c8a8e8; }
+
+.cc-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 0.5px solid var(--border);
+  margin-bottom: 16px;
+}
+.cc-metric {
+  padding: 10px 12px;
+  border-right: 0.5px solid var(--border);
+}
+.cc-metric:last-child { border-right: none; }
+.cc-metric-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.45;
+  margin-bottom: 3px;
+}
+.cc-metric-val {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.cc-metric-val.green { color: var(--green-light); }
+.cc-metric-val.red { color: var(--red); }
+.cc-metric-val.amber { color: var(--gold); }
+
+.cc-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink);
+  opacity: 0.7;
+  margin-bottom: 14px;
+}
+
+.risk-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.risk-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  opacity: 0.5;
+  width: 32px;
+}
+.risk-track {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.risk-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s;
+}
+.verdict-tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: auto;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+.v-safe { background: var(--green-pale); color: var(--green); }
+.v-growth { background: var(--amber-pale); color: #7a4a0a; }
+.v-caution { background: var(--red-pale); color: var(--red); }
+.v-spec { background: #fce8f0; color: #7a1a40; }
+
+/* ── COMPARISON TABLE ── */
+.table-outer {
+  overflow-x: auto;
+  border: 1px solid var(--border-strong);
+}
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 900px;
+}
+.comp-table thead th {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.comp-table tbody tr {
+  border-bottom: 0.5px solid var(--border);
+  transition: background 0.15s;
+}
+.comp-table tbody tr:hover { background: var(--cream); }
+.comp-table tbody td {
+  padding: 13px 16px;
+  vertical-align: middle;
+}
+.tname { font-weight: 500; }
+.tticker { font-family: var(--mono); font-size: 10px; opacity: 0.45; }
+.tval { font-family: var(--mono); font-size: 12px; }
+.tgreen { color: var(--green-light); font-weight: 500; }
+.tred { color: var(--red); font-weight: 500; }
+.tamber { color: var(--gold); font-weight: 500; }
+
+.risk-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.dot-low { background: var(--green-light); }
+.dot-med { background: var(--gold-light); }
+.dot-high { background: #d44; }
+.dot-vhigh { background: var(--red); }
+
+/* ── PICKS SECTION ── */
+.picks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.pick-col-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-bottom: 2px solid;
+  margin-bottom: 16px;
+}
+.pick-col-title.safe-col { color: var(--green); border-color: var(--green); }
+.pick-col-title.growth-col { color: var(--gold); border-color: var(--gold); }
+
+.pick-card {
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.pick-card:hover {
+  border-color: var(--border-strong);
+}
+.pick-rank {
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 700;
+  opacity: 0.06;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  line-height: 1;
+  pointer-events: none;
+}
+.pick-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pick-type {
+  font-family: var(--mono);
+  font-size: 10px;
+  opacity: 0.5;
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.pick-reason {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink);
+  opacity: 0.75;
+  margin-bottom: 14px;
+}
+.pick-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pick-bullets li {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink);
+  opacity: 0.6;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.pick-bullets li::before {
+  content: '→';
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+/* ── POLICY SECTION ── */
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.policy-card {
+  border: 0.5px solid var(--border-strong);
+  padding: 24px;
+}
+.policy-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.policy-name {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.policy-body {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink);
+  opacity: 0.7;
+}
+
+/* ── VERDICT SECTION ── */
+.verdict-section {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 64px 40px;
+}
+.verdict-section .section-title { color: var(--paper); }
+.verdict-section .section-num { color: var(--gold); }
+.verdict-section .section-header { border-bottom-color: rgba(245,241,234,0.15); }
+.verdict-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.verdict-card {
+  border: 1px solid rgba(245,241,234,0.15);
+  padding: 28px;
+}
+.vc-crown {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.vc-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.vc-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+.vc-body {
+  font-size: 13px;
+  line-height: 1.65;
+  opacity: 0.65;
+}
+.vc-highlight {
+  display: inline-block;
+  background: rgba(184,134,11,0.25);
+  color: var(--gold-light);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+/* ── GOVERNANCE TABLE ── */
+.gov-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.gov-table th {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-strong);
+  opacity: 0.5;
+}
+.gov-table td {
+  padding: 13px 16px;
+  border-bottom: 0.5px solid var(--border);
+  vertical-align: middle;
+}
+.gov-table tbody tr:hover { background: var(--cream); }
+
+.stars { color: var(--gold); letter-spacing: -2px; }
+.rating-pill {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background: var(--green-pale);
+  color: var(--green);
+}
+.flag-warn {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--red-pale);
+  color: var(--red);
+  border-radius: 2px;
+  font-family: var(--mono);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--cream);
+  border-top: 2px solid var(--ink);
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.footer-brand { font-family: var(--serif); font-size: 16px; font-weight: 700; }
+.footer-disc {
+  font-family: var(--mono);
+  font-size: 10px;
+  opacity: 0.5;
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* ── FADE-IN ANIMATION ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeUp 0.5s ease forwards; }
+.company-card, .pick-card, .policy-card {
+  animation: fadeUp 0.4s ease both;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; }
+  .picks-grid { grid-template-columns: 1fr; }
+  .verdict-grid { grid-template-columns: 1fr; }
+  header, .section, .hero, .verdict-section, footer { padding-left: 20px; padding-right: 20px; }
+  nav { padding: 0 20px; }
+  .header-top { padding: 12px 20px; }
+  .macro-tape { padding: 10px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="masthead">Equity Research • India Renewables</div>
+    <div class="logo">Solar<span>Intelligence</span></div>
+    <div class="header-meta">
+      FY2025–26 Edition<br>
+      Last updated: March 2026
+    </div>
+  </div>
+  <nav>
+    <a href="#macro">Macro</a>
+    <a href="#companies">Companies</a>
+    <a href="#comparison">Comparison</a>
+    <a href="#picks">Best Picks</a>
+    <a href="#governance">Governance</a>
+    <a href="#policy">Policy</a>
+    <a href="#verdict">Verdict</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-kicker">Deep-Dive Investment Research — 2025/26</div>
+    <h1>India's Renewable<br>Energy Sector:<br><em>Who Wins?</em></h1>
+    <p class="hero-lead">A data-driven analysis of India's top 10 solar, wind, and green hydrogen companies — filtered for debt quality, PPA stability, PLI benefits, and 5–10 year growth visibility. No promotional fluff, only numbers and critical reasoning.</p>
+    <div class="hero-disclaimer">
+      ⚠ Disclaimer: This is financial research commentary, not personalised investment advice. Not SEBI-registered research. Consult a qualified financial advisor before investing. All data sourced from company filings, SEBI disclosures, and brokerage research (Q3 FY26).
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-block">
+      <div class="stat-label">India RE Installed</div>
+      <div class="stat-value">250+ GW</div>
+      <div class="stat-sub">↑ from 175 GW in FY23</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">Solar Capacity</div>
+      <div class="stat-value">~130 GW</div>
+      <div class="stat-sub">World's 3rd largest</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">2030 Target</div>
+      <div class="stat-value">500 GW</div>
+      <div class="stat-sub">Non-fossil fuel power</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">Budget FY26 (MoNRE)</div>
+      <div class="stat-value">₹26,549 Cr</div>
+      <div class="stat-sub">↑ 53.5% YoY</div>
+    </div>
+  </div>
+</section>
+
+<!-- MACRO TAPE -->
+<div class="macro-tape">
+  <div class="tape-item">
+    <span class="tape-label">India Solar FY25 Additions</span>
+    <span class="tape-val">~24 GW</span>
+    <span class="tape-chg neutral">Record High</span>
+  </div>
+  <div class="tape-item">
+    <span class="tape-label">PLI Solar Budget</span>
+    <span class="tape-val">₹24,000 Cr</span>
+    <span class="tape-chg up">Active</span>
+  </div>
+  <div class="tape-item">
+    <span class="tape-label">Green H₂ Mission Budget FY26</span>
+    <span class="tape-val">₹600 Cr</span>
+    <span class="tape-chg up">+Allocated</span>
+  </div>
+  <div class="tape-item">
+    <span class="tape-label">Wind Additions FY25</span>
+    <span class="tape-val">~3.5 GW</span>
+    <span class="tape-chg neutral">Accelerating</span>
+  </div>
+  <div class="tape-item">
+    <span class="tape-label">BESS Projects Pipeline</span>
+    <span class="tape-val">13.57 GW</span>
+    <span class="tape-chg up">Emerging</span>
+  </div>
+  <div class="tape-item">
+    <span class="tape-label">RE % of India Power Mix</span>
+    <span class="tape-val">39.66%</span>
+    <span class="tape-chg up">↑ from 31% in FY23</span>
+  </div>
+</div>
+
+<!-- COMPANIES -->
+<section class="section" id="companies">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Company Deep Analysis</h2>
+    <span class="section-subtitle">10 companies • FY25–26 data</span>
+  </div>
+  <div class="company-grid">
+
+    <!-- ADANI GREEN -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Adani Green Energy</div>
+          <div class="cc-ticker">NSE: ADANIGREEN</div>
+        </div>
+        <span class="cc-badge badge-ipp">IPP</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">₹1.41L Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Capacity</div>
+          <div class="cc-metric-val">17.2 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Debt</div>
+          <div class="cc-metric-val red">Very High</div>
+        </div>
+      </div>
+      <p class="cc-desc">India's largest renewable IPP. 100% revenue from long-term PPAs. Khavda 30 GW mega-park under development. EBITDA margins ~83%. However: low interest coverage, rising debt for 50 GW capex, and US federal indictment of chairman (Nov 2024) creates serious governance overhang. TotalEnergies froze new contributions.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:85%;background:#c84040;"></div></div>
+        <span class="verdict-tag v-caution">Caution</span>
+      </div>
+    </div>
+
+    <!-- TATA POWER -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Tata Power</div>
+          <div class="cc-ticker">NSE: TATAPOWER</div>
+        </div>
+        <span class="cc-badge badge-integ">Integrated</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹90K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Revenue FY25</div>
+          <div class="cc-metric-val">₹33,233 Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Debt</div>
+          <div class="cc-metric-val amber">Moderate</div>
+        </div>
+      </div>
+      <p class="cc-desc">Only true full-stack: solar cell/module manufacturing + EPC + utility IPP + rooftop + Odisha power distribution. 12.8 GW total capacity, 3.9 GW clean. Target 80% clean by 2030. Mundra coal plant is a declining drag. Distribution gives rare stable captive cash flow. Tata governance = institutional confidence.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:40%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-safe">Stable</span>
+      </div>
+    </div>
+
+    <!-- NTPC GREEN -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">NTPC Green Energy</div>
+          <div class="cc-ticker">NSE: NTPCGREEN</div>
+        </div>
+        <span class="cc-badge badge-ipp">PSU IPP</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹70K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Pipeline</div>
+          <div class="cc-metric-val">26 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Promoter</div>
+          <div class="cc-metric-val green">GoI</div>
+        </div>
+      </div>
+      <p class="cc-desc">Sovereign-backed PSU. 3.4 GW operational, 26 GW pipeline, 60 GW target by 2032. 100% PPAs. AAA credit. Active in green hydrogen and BESS via SIGHT scheme. Weakness: PSU execution pace, low RoE/RoCE (~4.5%), and IPO valuation remains steep. Zero controversy.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:22%;background:#2d7a4f;"></div></div>
+        <span class="verdict-tag v-safe">Lowest Risk</span>
+      </div>
+    </div>
+
+    <!-- WAAREE -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Waaree Energies</div>
+          <div class="cc-ticker">NSE: WAAREEENER</div>
+        </div>
+        <span class="cc-badge badge-mfg">Mfg + PLI</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹72K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Order Book</div>
+          <div class="cc-metric-val green">24 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Net Debt</div>
+          <div class="cc-metric-val green">Net Cash</div>
+        </div>
+      </div>
+      <p class="cc-desc">India's largest solar module maker (22.3 GW capacity, 5.4 GW cells). Q3 FY26: revenue +119%, EBITDA +167%, net profit +118% YoY. Net cash positive (–₹5,393 Cr net debt). 21% domestic module market share. US facility operational. PLI winner + SIGHT electrolyzer winner. Key risk: US tariff exposure on modules.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:38%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-growth">Multibagger</span>
+      </div>
+    </div>
+
+    <!-- SUZLON -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Suzlon Energy</div>
+          <div class="cc-ticker">NSE: SUZLON</div>
+        </div>
+        <span class="cc-badge badge-mfg">WTG Mfg</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹57K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Order Book</div>
+          <div class="cc-metric-val green">6.4 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Net Debt</div>
+          <div class="cc-metric-val green">~Zero</div>
+        </div>
+      </div>
+      <p class="cc-desc">35% India wind market share. Q3 FY26: 617 MW deliveries (highest ever quarter), revenue +58% YoY, EBITDA +77% YoY. Net profit tripled YoY to ₹3,230 Cr TTM. CRISIL upgraded to 'A' with positive outlook. Launching DevCo for solar + BESS. High-beta name — volatile but fundamentals are exceptional.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:42%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-growth">High Growth</span>
+      </div>
+    </div>
+
+    <!-- JSW ENERGY -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">JSW Energy</div>
+          <div class="cc-ticker">NSE: JSWENERGY</div>
+        </div>
+        <span class="cc-badge badge-ipp">IPP + M&A</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹60K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Capacity</div>
+          <div class="cc-metric-val">10 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Rev Growth</div>
+          <div class="cc-metric-val green">+92% Q3</div>
+        </div>
+      </div>
+      <p class="cc-desc">Aggressive M&A strategy: acquired O2 Power (4.7 GW) and KSK Mahanadi. Q3 FY26 revenue +92% YoY, PAT +38%. Secured 25-yr PPAs with SECI and BESCOM. India's largest private hydropower operator. Green hydrogen foray adds optionality. Rising debt from M&A is the main risk — integration must execute cleanly.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:48%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-growth">High Growth</span>
+      </div>
+    </div>
+
+    <!-- INOX WIND -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Inox Wind</div>
+          <div class="cc-ticker">NSE: INOXWIND</div>
+        </div>
+        <span class="cc-badge badge-mfg">WTG Mfg</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹15K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Rev Growth</div>
+          <div class="cc-metric-val green">+81% Q3</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Profit</div>
+          <div class="cc-metric-val green">Multi-fold</div>
+        </div>
+      </div>
+      <p class="cc-desc">Pure-play wind turbine manufacturer. Revenue +81%, profit grew from ₹1 Cr → ₹117 Cr in Q3 FY25 YoY. Still rebuilding after near-bankruptcy. Less vertically integrated than Suzlon, smaller order book, more execution risk. High-beta play — strong only as a small satellite position alongside Suzlon.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:62%;background:#c84040;"></div></div>
+        <span class="verdict-tag v-spec">High Beta</span>
+      </div>
+    </div>
+
+    <!-- ACME SOLAR -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">ACME Solar Holdings</div>
+          <div class="cc-ticker">NSE: ACMESOLAR</div>
+        </div>
+        <span class="cc-badge badge-ipp">FDRE IPP</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹9K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Pipeline</div>
+          <div class="cc-metric-val">7.4 GW</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Debt</div>
+          <div class="cc-metric-val amber">High (IPP)</div>
+        </div>
+      </div>
+      <p class="cc-desc">Specialist in Firm & Dispatchable Renewable Energy (FDRE) — solar + wind + storage hybrid. FDRE commands ₹4.50–5.50/kWh vs ₹2.50 for plain solar, significantly improving unit economics. 100% PPA coverage. Smaller player but strategically positioned in the next wave of RE procurement India will drive post-2026.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:50%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-growth">FDRE Play</span>
+      </div>
+    </div>
+
+    <!-- PREMIER ENERGIES -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Premier Energies</div>
+          <div class="cc-ticker">NSE: PREMIENRGE</div>
+        </div>
+        <span class="cc-badge badge-mfg">Cells + PLI</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹12K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">EBITDA Margin</div>
+          <div class="cc-metric-val green">30–43%</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Net Debt</div>
+          <div class="cc-metric-val green">Debt-Free</div>
+        </div>
+      </div>
+      <p class="cc-desc">Integrated solar cell + module manufacturer with 30–43% EBITDA margins — higher than Waaree's module-only level due to backward integration. Debt-free as of Sept 2024. PLI scheme beneficiary. Smaller scale than Waaree but superior margins. 1.3 GW order pipeline. Ideal for investors who want manufacturing exposure but are cautious about Waaree's valuation.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:35%;background:#c8960a;"></div></div>
+        <span class="verdict-tag v-growth">PLI Winner</span>
+      </div>
+    </div>
+
+    <!-- STERLING & WILSON -->
+    <div class="company-card">
+      <div class="cc-head">
+        <div>
+          <div class="cc-name">Sterling & Wilson RE</div>
+          <div class="cc-ticker">NSE: SWSOLAR</div>
+        </div>
+        <span class="cc-badge badge-epc">Global EPC</span>
+      </div>
+      <div class="cc-metrics">
+        <div class="cc-metric">
+          <div class="cc-metric-label">Market Cap</div>
+          <div class="cc-metric-val">~₹5.8K Cr</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Global Portfolio</div>
+          <div class="cc-metric-val">19 GW+</div>
+        </div>
+        <div class="cc-metric">
+          <div class="cc-metric-label">Debt</div>
+          <div class="cc-metric-val red">Elevated</div>
+        </div>
+      </div>
+      <p class="cc-desc">Global solar EPC contractor — 19 GW portfolio, 8.2 GW O&M globally. International revenue exposure is a differentiator. However: EPC margins thin (3–6%), working capital stress historically, Shapoorji Pallonji promoter controversy. Recovery underway but balance sheet risk remains. Speculative only — for high-risk-tolerance investors.</p>
+      <div class="risk-row">
+        <span class="risk-label">Risk</span>
+        <div class="risk-track"><div class="risk-fill" style="width:72%;background:#c84040;"></div></div>
+        <span class="verdict-tag v-spec">Speculative</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section" id="comparison">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Comparison Table</h2>
+    <span class="section-subtitle">All data FY25–26</span>
+  </div>
+  <div class="table-outer">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Type</th>
+          <th>Mkt Cap</th>
+          <th>Revenue</th>
+          <th>Capacity / Scale</th>
+          <th>Debt</th>
+          <th>Rev Growth</th>
+          <th>Risk Level</th>
+          <th>PPA Cover</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="tname">Adani Green Energy</div><div class="tticker">ADANIGREEN</div></td>
+          <td class="tval">IPP</td>
+          <td class="tval">₹1.41L Cr</td>
+          <td class="tval">~₹11,000 Cr</td>
+          <td class="tval">17.2 GW op.</td>
+          <td class="tval tred">Very High</td>
+          <td class="tval tgreen">~42% CAGR 5yr</td>
+          <td><span class="risk-dot dot-vhigh"></span><span class="tval">Very High</span></td>
+          <td class="tval tgreen">100%</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Tata Power</div><div class="tticker">TATAPOWER</div></td>
+          <td class="tval">Integrated</td>
+          <td class="tval">~₹90K Cr</td>
+          <td class="tval">₹33,233 Cr</td>
+          <td class="tval">12.8 GW total</td>
+          <td class="tval tamber">Moderate</td>
+          <td class="tval">~15% CAGR 3yr</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval tgreen">~85%+</td>
+        </tr>
+        <tr>
+          <td><div class="tname">NTPC Green Energy</div><div class="tticker">NTPCGREEN</div></td>
+          <td class="tval">PSU IPP</td>
+          <td class="tval">~₹70K Cr</td>
+          <td class="tval">~₹3,500 Cr</td>
+          <td class="tval">26 GW pipeline</td>
+          <td class="tval tamber">D/E ~2x</td>
+          <td class="tval tgreen">Rapid (early)</td>
+          <td><span class="risk-dot dot-low"></span><span class="tval">Low</span></td>
+          <td class="tval tgreen">100%</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Waaree Energies</div><div class="tticker">WAAREEENER</div></td>
+          <td class="tval">Mfg/PLI</td>
+          <td class="tval">~₹72K Cr</td>
+          <td class="tval">~₹14,000 Cr</td>
+          <td class="tval">22.3 GW cap.</td>
+          <td class="tval tgreen">Net Cash</td>
+          <td class="tval tgreen">~85–119%</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval">N/A (Mfg)</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Suzlon Energy</div><div class="tticker">SUZLON</div></td>
+          <td class="tval">WTG Mfg</td>
+          <td class="tval">~₹57K Cr</td>
+          <td class="tval">~₹13,200 Cr</td>
+          <td class="tval">6.4 GW order book</td>
+          <td class="tval tgreen">Near Zero</td>
+          <td class="tval tgreen">~60%+</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval">N/A (Mfg)</td>
+        </tr>
+        <tr>
+          <td><div class="tname">JSW Energy</div><div class="tticker">JSWENERGY</div></td>
+          <td class="tval">IPP+M&A</td>
+          <td class="tval">~₹60K Cr</td>
+          <td class="tval">~₹15K Cr est.</td>
+          <td class="tval">10 GW total</td>
+          <td class="tval tamber">Rising (M&A)</td>
+          <td class="tval tgreen">~92% Q3</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval tgreen">25-yr PPAs</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Inox Wind</div><div class="tticker">INOXWIND</div></td>
+          <td class="tval">WTG Mfg</td>
+          <td class="tval">~₹15K Cr</td>
+          <td class="tval">~₹3,500 Cr</td>
+          <td class="tval">Ramp-up phase</td>
+          <td class="tval tamber">Improving</td>
+          <td class="tval tgreen">~81%</td>
+          <td><span class="risk-dot dot-high"></span><span class="tval">High</span></td>
+          <td class="tval">N/A</td>
+        </tr>
+        <tr>
+          <td><div class="tname">ACME Solar</div><div class="tticker">ACMESOLAR</div></td>
+          <td class="tval">FDRE IPP</td>
+          <td class="tval">~₹9K Cr</td>
+          <td class="tval">~₹2,200 Cr</td>
+          <td class="tval">7.4 GW</td>
+          <td class="tval tamber">High (IPP)</td>
+          <td class="tval">~20–25%</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval tgreen">100%</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Premier Energies</div><div class="tticker">PREMIENRGE</div></td>
+          <td class="tval">Cells/PLI</td>
+          <td class="tval">~₹12K Cr</td>
+          <td class="tval">~₹4,000 Cr</td>
+          <td class="tval">43% EBITDA margin</td>
+          <td class="tval tgreen">Debt-Free</td>
+          <td class="tval tgreen">~50%+</td>
+          <td><span class="risk-dot dot-med"></span><span class="tval">Medium</span></td>
+          <td class="tval">N/A</td>
+        </tr>
+        <tr>
+          <td><div class="tname">Sterling & Wilson</div><div class="tticker">SWSOLAR</div></td>
+          <td class="tval">Global EPC</td>
+          <td class="tval">~₹5.8K Cr</td>
+          <td class="tval">~₹4,500 Cr</td>
+          <td class="tval">19 GW+ globally</td>
+          <td class="tval tred">Elevated</td>
+          <td class="tval">~25–30%</td>
+          <td><span class="risk-dot dot-high"></span><span class="tval">High</span></td>
+          <td class="tval">N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- BEST PICKS -->
+<section class="section" id="picks">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Best Investment Picks</h2>
+    <span class="section-subtitle">Data-justified selections</span>
+  </div>
+  <div class="picks-grid">
+    <div>
+      <div class="pick-col-title safe-col">Safe &amp; Stable Long-Term</div>
+
+      <div class="pick-card">
+        <div class="pick-rank">1</div>
+        <div class="pick-name">NTPC Green Energy</div>
+        <div class="pick-type">PSU IPP • AAA Rated • GoI Backed</div>
+        <p class="pick-reason">The most defensible renewable energy bet in India. Government of India as promoter means zero governance risk and access to the cheapest possible debt. Every single MW of operational capacity is PPA-covered. 60 GW target by 2032 is backed by sovereign will.</p>
+        <ul class="pick-bullets">
+          <li>3.4 GW operational → 60 GW by 2032</li>
+          <li>100% PPA coverage, AAA credit rating</li>
+          <li>SIGHT Scheme green hydrogen participation</li>
+          <li>Risk: low RoE (4.5%), PSU execution pace, steep IPO valuation</li>
+        </ul>
+      </div>
+
+      <div class="pick-card">
+        <div class="pick-rank">2</div>
+        <div class="pick-name">Tata Power</div>
+        <div class="pick-type">Integrated • Manufacturing + EPC + IPP + Distribution</div>
+        <p class="pick-reason">Unique diversification across the entire value chain — the only company where even a slowdown in one segment (IPP commissioning, say) doesn't derail overall earnings. Odisha distribution provides evergreen base cash flow. Tata group credibility is unmatched.</p>
+        <ul class="pick-bullets">
+          <li>Only true full-stack player in India</li>
+          <li>Mundra drag is finite — winding down</li>
+          <li>PLI exposure through Tata Power Solar manufacturing</li>
+          <li>Risk: Mundra short-term drag, moderate debt</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="pick-col-title growth-col">High Growth / Multibagger Potential</div>
+
+      <div class="pick-card">
+        <div class="pick-rank">1</div>
+        <div class="pick-name">Waaree Energies</div>
+        <div class="pick-type">Solar Mfg • Debt-Free • PLI + SIGHT Winner</div>
+        <p class="pick-reason">The closest thing to a "picks and shovels" play on India's solar buildout. Explosive Q3 FY26 numbers (+119% revenue, +167% EBITDA) prove the business model. Net cash-positive at this growth rate is extremely rare. Green hydrogen electrolyzer adds a 2027–2030 option.</p>
+        <ul class="pick-bullets">
+          <li>22.3 GW module + 5.4 GW cell capacity</li>
+          <li>₹–5,393 Cr net debt (cash surplus)</li>
+          <li>24 GW order book = ~2 yrs revenue visibility</li>
+          <li>Risk: US tariff exposure, commodity margin pressure</li>
+        </ul>
+      </div>
+
+      <div class="pick-card">
+        <div class="pick-rank">2</div>
+        <div class="pick-name">Suzlon Energy</div>
+        <div class="pick-type">WTG Mfg • Debt-Free Turnaround • 35% Market Share</div>
+        <p class="pick-reason">India's most dramatic corporate turnaround. From near-bankruptcy to CRISIL A, net-zero debt, and record quarterly deliveries. 35% wind market share is a structural moat. DevCo solar + BESS expansion reduces single-sector risk. Buy aggressively on corrections below ₹52.</p>
+        <ul class="pick-bullets">
+          <li>617 MW deliveries Q3 FY26 — highest ever</li>
+          <li>Net profit tripled YoY to ₹3,230 Cr TTM</li>
+          <li>6.4 GW order book with robust pipeline</li>
+          <li>Risk: wind slowdown risk, high-beta volatility</li>
+        </ul>
+      </div>
+
+      <div class="pick-card">
+        <div class="pick-rank">3</div>
+        <div class="pick-name">JSW Energy</div>
+        <div class="pick-type">IPP + M&A + Green H₂ • JSW Group Backing</div>
+        <p class="pick-reason">The fastest-growing large IPP in India on M&A-adjusted basis. 25-year PPA quality is excellent. JSW Group backing gives access to capital markets even in tight liquidity environments. Green hydrogen and BESS add future optionality not priced in yet.</p>
+        <ul class="pick-bullets">
+          <li>Revenue +92% YoY Q3 FY26</li>
+          <li>25-yr PPAs with SECI and BESCOM</li>
+          <li>20 GW RE capacity target</li>
+          <li>Risk: M&A integration, rising debt</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+<section class="section" id="governance">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Trust &amp; Governance Check</h2>
+    <span class="section-subtitle">Critical for long-term holders</span>
+  </div>
+  <table class="gov-table">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Governance Rating</th>
+        <th>Promoter Quality</th>
+        <th>Credit Rating</th>
+        <th>Controversies / Red Flags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>NTPC Green Energy</strong></td>
+        <td><span class="stars">★★★★★</span></td>
+        <td>Government of India</td>
+        <td><span class="rating-pill">AAA</span></td>
+        <td style="color:var(--green-light);font-size:13px;">None</td>
+      </tr>
+      <tr>
+        <td><strong>Tata Power</strong></td>
+        <td><span class="stars">★★★★★</span></td>
+        <td>Tata Sons (Tata Group)</td>
+        <td><span class="rating-pill">AA+</span></td>
+        <td style="color:var(--green-light);font-size:13px;">None</td>
+      </tr>
+      <tr>
+        <td><strong>JSW Energy</strong></td>
+        <td><span class="stars">★★★★</span></td>
+        <td>JSW Group / Sajjan Jindal</td>
+        <td><span class="rating-pill">AA</span></td>
+        <td style="color:var(--green-light);font-size:13px;">None</td>
+      </tr>
+      <tr>
+        <td><strong>Waaree Energies</strong></td>
+        <td><span class="stars">★★★★</span></td>
+        <td>Hiren Parekh (founder-led)</td>
+        <td><span class="rating-pill">Strong</span></td>
+        <td style="color:var(--green-light);font-size:13px;">None</td>
+      </tr>
+      <tr>
+        <td><strong>Suzlon Energy</strong></td>
+        <td><span class="stars">★★★★</span></td>
+        <td>Tanti family</td>
+        <td><span class="rating-pill">CRISIL A</span></td>
+        <td style="color:var(--gold);font-size:13px;">Past debt crisis (2013–2019) — fully resolved. Two rating upgrades in one year.</td>
+      </tr>
+      <tr>
+        <td><strong>ACME Solar</strong></td>
+        <td><span class="stars">★★★</span></td>
+        <td>Manoj Kumar Upadhyay</td>
+        <td><span class="rating-pill">BBB+</span></td>
+        <td style="color:var(--gold);font-size:13px;">High leverage. Small-cap liquidity concerns.</td>
+      </tr>
+      <tr>
+        <td><strong>Sterling & Wilson</strong></td>
+        <td><span class="stars">★★★</span></td>
+        <td>Shapoorji Pallonji Group</td>
+        <td><span class="rating-pill">Recovering</span></td>
+        <td><span class="flag-warn">Working capital crisis FY22–23. Promoter liquidity stress.</span></td>
+      </tr>
+      <tr>
+        <td><strong>Adani Green Energy</strong></td>
+        <td><span class="stars">★★</span></td>
+        <td>Adani Group</td>
+        <td><span class="rating-pill">Under Review</span></td>
+        <td>
+          <span class="flag-warn">US federal indictment of chairman (Nov 2024)</span>&nbsp;
+          <span class="flag-warn">Hindenburg Report (2023)</span>&nbsp;
+          <span class="flag-warn">TotalEnergies froze new investments</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- POLICY -->
+<section class="section" id="policy">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Policy &amp; Industry Drivers</h2>
+    <span class="section-subtitle">What's moving the sector</span>
+  </div>
+  <div class="policy-grid">
+    <div class="policy-card">
+      <div class="policy-icon">🏭</div>
+      <div class="policy-name">PLI Scheme — Solar PV</div>
+      <p class="policy-body">₹24,000 Cr allocated for domestic solar cell and module manufacturing. Direct beneficiaries: Waaree Energies, Premier Energies, Tata Power Solar. Designed to reduce China import dependency (India currently imports ~85% of solar cells from China). Target: 50 GW/year domestic capacity by 2027.</p>
+    </div>
+    <div class="policy-card">
+      <div class="policy-icon">⚗️</div>
+      <div class="policy-name">National Green Hydrogen Mission</div>
+      <p class="policy-body">₹600 Cr budget FY26. SIGHT scheme for electrolyzer manufacturing: Waaree (300 MW), Adani Enterprises (101.5 MW) won bids. Production-linked incentive for green hydrogen production targets 5 MMT/year by 2030. 2027–2035 is the real revenue window — invest now for future payoff.</p>
+    </div>
+    <div class="policy-card">
+      <div class="policy-icon">⚡</div>
+      <div class="policy-name">FDRE / Storage Mandates</div>
+      <p class="policy-body">Ministry of Power mandated FDRE (Firm & Dispatchable RE) tenders — hybrid solar + wind + BESS. ACME Solar and JSW Energy are frontrunners. FDRE tariffs (₹4.50–5.50/kWh) are 60–100% premium over plain solar. 13.57 GW BESS pipeline under development nationally.</p>
+    </div>
+    <div class="policy-card">
+      <div class="policy-icon">🌐</div>
+      <div class="policy-name">Import Tariff Protection</div>
+      <p class="policy-body">40% Basic Customs Duty on solar modules + 25% on cells from China. Protects PLI manufacturers domestically. However: US imposed preliminary anti-dumping duties on Indian solar modules — creates short-term headwind for exporters like Waaree (US facility partially mitigates this).</p>
+    </div>
+    <div class="policy-card">
+      <div class="policy-icon">📋</div>
+      <div class="policy-name">PPA Signing Reform</div>
+      <p class="policy-body">MoP mandated PPA signing within 30 days of LOA issuance — addressing 40+ GW projects stuck in PPA limbo. This directly unlocks capex deployment timelines for Adani Green, NTPC Green, JSW Energy and ACME Solar. Expect accelerated commissioning in FY27.</p>
+    </div>
+    <div class="policy-card">
+      <div class="policy-icon">🔋</div>
+      <div class="policy-name">PM-KUSUM + Rooftop Solar</div>
+      <p class="policy-body">PM Surya Ghar: free electricity for 1 crore households. ₹75,000 Cr allocated. Primary beneficiary: Tata Power Solar (rooftop segment). Creates a massive distributed solar demand that is completely distinct from utility-scale — a true second growth engine for the right companies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VERDICT -->
+<section class="verdict-section" id="verdict">
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Final Verdict</h2>
+  </div>
+  <div class="verdict-grid">
+    <div class="verdict-card">
+      <div class="vc-crown">🏆</div>
+      <div class="vc-label">Most Trustworthy Long-Term Bet</div>
+      <div class="vc-name">NTPC Green Energy + Tata Power</div>
+      <p class="vc-body">NTPC for pure capital safety — sovereign backing, AAA rating, 100% PPA, zero controversy, 60 GW pipeline. Tata Power for safety with growth — the only full-stack operator, Tata governance premium, Mundra overhang is finite and declining. Both are institutional-grade investments.</p>
+      <span class="vc-highlight">Low volatility • High conviction • Multi-decade compounders</span>
+    </div>
+    <div class="verdict-card">
+      <div class="vc-crown">🚀</div>
+      <div class="vc-label">Highest Upside Potential</div>
+      <div class="vc-name">Waaree Energies</div>
+      <p class="vc-body">Debt-free with ₹5,393 Cr net cash. Q3 FY26 EBITDA +167% YoY. 24 GW order book = 2 years visibility. 22.3 GW module + 5.4 GW cell capacity. PLI + SIGHT winner. US facility. Backward integrating to wafers. At the right price, this is a once-in-a-decade manufacturing story for India.</p>
+      <span class="vc-highlight">Explosive growth • Debt-free • Multiple catalysts</span>
+    </div>
+    <div class="verdict-card">
+      <div class="vc-crown">⚠️</div>
+      <div class="vc-label">Most Overrated / Highest Risk</div>
+      <div class="vc-name">Adani Green Energy</div>
+      <p class="vc-body">The underlying assets are real. PPA quality is genuinely excellent. But at ₹1.41 lakh crore market cap, you're paying a steep premium for a company with low interest coverage, rising debt (₹30,000 Cr capex ahead), US federal indictment of its chairman, and TotalEnergies halting new investments. The risk-reward does not justify the valuation.</p>
+      <span class="vc-highlight">Strong assets • Poor risk-reward at current price</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">SolarIntelligence</div>
+    <div style="font-family:var(--mono);font-size:10px;opacity:0.4;margin-top:4px;">India Renewable Energy Research • FY2025–26</div>
+  </div>
+  <div class="footer-disc">
+    ⚠ This document is financial research commentary only and does not constitute personalised investment advice. The author is not a SEBI-registered research analyst. Data sourced from company filings, SEBI disclosures, CRISIL ratings, brokerage research (MOFSL, JM Financial, Nuvama) and public earnings reports (Q3 FY26). Past revenue growth and order books do not guarantee future returns. All investment decisions should be made after consulting a qualified financial advisor and conducting independent due diligence.
+  </div>
+</footer>
+
+</body>
+</html>
